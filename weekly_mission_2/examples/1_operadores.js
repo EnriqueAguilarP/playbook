@@ -51,26 +51,24 @@ console.log("Ejemplo 7: Paises que empiezan en Chi")
 const countriesStartChi = countries.filter((country) => country.startsWith('Chi'))
 console.log(countriesStartChi)
 
-//AQUI VOY EN LOS EJERCICIOS DE NODEJS
-
 // Ejemplo 8: Filtrar una lista por condicional
-const scores = [
-  { name: 'A', score: 95 },
-  { name: 'L', score: 98 },
-  { name: 'M', score: 80 },
-  { name: 'E', score: 50 },
-  { name: 'M', score: 85 },
-  { name: 'J', score: 100 },
+console.log("Ejemplo 8: Filtrando elementos por score")
+const puntajes = [
+  { name: 'Algebra', score: 91 },
+  { name: 'Redes', score: 85 },
+  { name: 'Matematicas', score: 95 },
+  { name: 'POO', score: 89 },
+  { name: 'Algoritmos', score: 85 },
+  { name: 'Inteligencia Artificial', score: 100 },
 ]
 
-const scoresGreaterEighty = scores.filter((score) => score.score > 80)
-console.log("Ejemplo 8: Filtrando elementos por score")
+const scoresGreaterEighty = puntajes.filter((score) => score.score > 90)
 console.log(scoresGreaterEighty)
 
 // Ejemplo 9: Uso del reduce
-const numbers9 = [1, 2, 3, 4, 5]
-const result_of_reduce = numbers9.reduce((acc, element) => acc + element, 0)
 console.log("Ejemplo 9: Uso de reduce para calcular la suma de los elementos de una lista")
+const numbers9 = [15, 21, 33, 44, 15]
+const result_of_reduce = numbers9.reduce((acc, element) => acc + element, 0)
 console.log(result_of_reduce)
 
 // Ejemplo 10: uso de every nos ayuda a validar todos los elementos de una lista, si todos cumplen con la validación que indiques te regresa true, de lo contrario false
