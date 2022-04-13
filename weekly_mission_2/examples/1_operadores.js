@@ -62,8 +62,8 @@ const puntajes = [
   { name: 'Inteligencia Artificial', score: 100 },
 ]
 
-const scoresGreaterEighty = puntajes.filter((score) => score.score > 90)
-console.log(scoresGreaterEighty)
+const scoresGreater = puntajes.filter((score) => score.score > 90)
+console.log(scoresGreater)
 console.log()
 
 // Ejemplo 9: Uso del reduce
