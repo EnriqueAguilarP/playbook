@@ -126,11 +126,12 @@ console.log(prices.sort())
 console.log()
 
 // Ejemplo 16: Ordenando una lista de objetos
+console.log("Ejemplo 16: Uso del iterador sort en una lista de objetos")
 const users = [
-  { name: 'A', age: 150 },
-  { name: 'B', age: 50 },
-  { name: 'C', age: 100 },
-  { name: 'D', age: 22 },
+  { name: 'Angel', age: 32 },
+  { name: 'Armando', age: 25 },
+  { name: 'Fabrizio', age: 20 },
+  { name: 'Diego', age: 22 },
 ]
 
 users.sort((a, b) => { // podemos invocar una función
@@ -139,5 +140,5 @@ users.sort((a, b) => { // podemos invocar una función
   return 0
 })
 
-console.log("Ejemplo 16: Ordenando una lista de objetos por la edad")
+console.log("Ordenando una lista de objetos por la edad")
 console.log(users) // sorted ascending
