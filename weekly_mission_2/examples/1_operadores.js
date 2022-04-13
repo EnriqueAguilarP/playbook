@@ -64,52 +64,66 @@ const puntajes = [
 
 const scoresGreaterEighty = puntajes.filter((score) => score.score > 90)
 console.log(scoresGreaterEighty)
+console.log()
 
 // Ejemplo 9: Uso del reduce
 console.log("Ejemplo 9: Uso de reduce para calcular la suma de los elementos de una lista")
 const numbers9 = [15, 21, 33, 44, 15]
 const result_of_reduce = numbers9.reduce((acc, element) => acc + element, 0)
 console.log(result_of_reduce)
+console.log()
 
 // Ejemplo 10: uso de every nos ayuda a validar todos los elementos de una lista, si todos cumplen con la validación que indiques te regresa true, de lo contrario false
-const names10 = ['Explorer 1', 'Explorer 2', 'Explorer 3', 'Explorer 4']
-const areAllStr = names10.every((name) => typeof name === 'string') // every
-console.log("Ejemplo 10: Son todos los nombres string: " + areAllStr)
+console.log("Ejemplo 10: Uso del every")
+const numb10 = [4, 5, 8, 20]
+const areAllNum = numb10.every((num) => typeof num === 'number') // every
+console.log("Son todos los datos son de tipo número: " + areAllNum)
+console.log()
 
 // Ejemplo 11: Uso de find para encontrar el primer elemento de una lista que cumpla con lo que indiques
+console.log("Ejemplo 11: Uso del find")
 const ages = [24, 22, 19, 25, 32, 35, 18]
-const age = ages.find((age) => age < 20)
-console.log("Ejemplo 11: Primera edad menor a 20 es: "+ age)
+const age = ages.find((age) => age > 26)
+console.log("Primera edad mayor a 20 es: "+ age)
+console.log()
 
 // Ejemplo 12: Uso de find en una lista de objetos
+console.log("Ejemplo 12. Uso del find en una lista de objetos")
 const scores12 = [
-  { name: 'A', score: 95 },
-  { name: 'M', score: 80 },
-  { name: 'E', score: 50 },
-  { name: 'M', score: 85 },
-  { name: 'J', score: 100 },
+  { name: 'Algebra', score: 81 },
+  { name: 'Redes', score: 85 },
+  { name: 'Matematicas', score: 95 },
+  { name: 'POO', score: 89 },
+  { name: 'Algoritmos', score: 85 },
+  { name: 'Inteligencia Artificial', score: 100 },
 ]
 
-const score_less_than_80 = scores12.find((user) => user.score > 80)
-console.log("Ejemplo 12. Name score found:" + score_less_than_80.name)
+const score_bigger_than_90 = scores12.find((numb) => numb.score > 90)
+console.log("Name score found: " + score_bigger_than_90.name)
+console.log()
 
 // Ejemplo 13: Uso de findIndex, este método regresa la posición del primer elemento que cumpla con la validación que indiques.
-const names13 = ['Explorer 1', 'Explorer 2', 'Explorer 3']
-const result = names13.findIndex((name) => name.length > 7)
-console.log("Ejemplo 13: Primer elemento cuya palabra sea mayor a 7 esta en la posición "+ result)
+console.log("Ejemplo 13: Uso de findIndex ")
+const names13 = ['Angel', 'Armando', 'Diego']
+const result = names13.findIndex((name) => name.length > 6)
+console.log("Primer elemento cuya palabra sea mayor a 6 esta en la posición "+ result)
+console.log()
 
 // Ejemplo 14: Uso de some, este método validará todos los elementos de la lista, y si alguno cumple con la validación indicada, regresará true, de lo contrario será false.
-
+console.log("Ejemplo 14. Uso del iterador some")
 // lista de elementos
 const bools = [true, true, false, true]
 // Uso de Some para ver si al menos uno de los elementos es false
-const areSomeTrue = bools.some((b) =>  b === false)
-console.log("Ejemplo 14: Alguno de los elementos en el array es false: " + areSomeTrue) //true
+const areSomeFalse = bools.some((b) =>  b === false)
+console.log("Alguno de los elementos en el array es false: " + areSomeFalse)
+console.log()
 
 //Ejemplo 15: Uso de sort para ordenar elementos
-const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
-console.log("Ejemplo 15: Elementos ordernados usando SORT")
-console.log(products.sort())
+console.log("Ejemplo 15: Uso del iterador sort")
+const prices = [51, 89, 15, 23, 48, 70]
+console.log("Elementos ordernados usando SORT:")
+console.log(prices.sort())
+console.log()
 
 // Ejemplo 16: Ordenando una lista de objetos
 const users = [
